@@ -1,306 +1,277 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 /* ==========================================================================
-   Base styles: opinionated defaults
+   1. VARIABLES GLOBALES Y CONFIGURACIÓN (Diseño de interfaz oscura)
    ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+:root {
+  --bg-primary: #0a0a0c;
+  --bg-card: #121216;
+  --bg-card-hover: #18181f;
+  --text-white: #ffffff;
+  --text-muted: #a0a0ab;
+  --text-body: #e4e4e7;
+  --neon-blue: #00f2fe;
+  --neon-green: #39ff14;
+  --neon-cyan: #00d2ff;
+  --transition-fast: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
-
-
-
-/*
-* Aquí empieza el proyecto
-*/
 
 body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif; 
-  background-color: #6fb6cc;
-  margin: 0;
-  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #6fb6cc;
-  border-radius: 8px;
+/* Centrado global del contenedor de Bootstrap */
+main.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-h1 {
-  color: #fff;
+/* Separación simétrica de las secciones principales */
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+/* Titulares centrados y estilizados */
+.text-glow-blue,
+.text-glow-green {
   text-align: center;
+  margin-bottom: 3rem !important;
 }
 
-h2 {
-  color: black;
-  margin-top: 20px;
+/* ==========================================================================
+   2. BARRA DE NAVEGACIÓN (Navbar responsiva con efecto desenfoque)
+   ========================================================================== */
+.navbar {
+  background-color: rgba(10, 10, 12, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1rem 0;
 }
 
-p {
-  color: #333;
-  line-height: 1.6;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  color: #333;
-}
-
-a {
-  color: #38065a;
+.navbar-brand-custom {
+  color: var(--text-white);
+  font-weight: 800;
+  font-size: 1.5rem;
   text-decoration: none;
+  letter-spacing: 1px;
+  transition: var(--transition-fast);
 }
 
-.footer {
-  margin-top: 20px;
-  color: black;
-  background-color: #6fb6cc;
-  padding: 20px;
+.navbar-brand-custom:hover {
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.6);
 }
 
-.nav ul {
-  list-style-type: none;
-  padding: 0;
+.navbar-toggler-custom {
+  background: none;
+  border: none;
+  color: var(--text-white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-link-custom {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: var(--transition-fast);
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+.nav-link-custom:hover {
+  color: var(--text-white);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* ==========================================================================
+   3. SECCIÓN SOBRE MÍ (Contenido equilibrado)
+   ========================================================================== */
+.text-glow-blue {
+  color: var(--text-white);
+  text-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+}
+
+.text-muted-custom {
+  color: var(--text-muted);
+}
+
+.text-white-body {
+  color: var(--text-body);
+}
+
+.text-balance {
+  text-wrap: balance;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-download-cv {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.1), rgba(0, 210, 255, 0.2));
+  color: var(--neon-blue);
+  border: 1px solid var(--neon-blue);
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.1);
+}
+
+.btn-download-cv:hover {
+  background: var(--neon-blue);
+  color: var(--bg-primary);
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+  transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   4. TARJETAS DE PROYECTOS (Distribución simétrica y espaciados controlados)
+   ========================================================================== */
+.text-glow-green {
+  color: var(--text-white);
+  text-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+}
+
+/* Tarjeta Principal */
+.card-custom {
+  background-color: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem !important;
+  /* Espaciado interno consistente */
+  transition: var(--transition-fast);
+}
+
+.card-custom:hover {
+  border-color: rgba(57, 255, 20, 0.3);
+  box-shadow: 0 12px 30px rgba(57, 255, 20, 0.08);
+  transform: translateY(-5px);
+}
+
+.btn-fluor-green {
+  background-color: transparent;
+  color: var(--neon-green);
+  border: 1px solid var(--neon-green);
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  display: inline-block;
+}
+
+.btn-fluor-green:hover {
+  background-color: var(--neon-green);
+  color: var(--bg-primary);
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+}
+
+/* Tarjetas Secundarias */
+.card-small-custom {
+  background-color: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  padding: 1.5rem !important;
+  /* Incremento de espacio interno */
+  transition: var(--transition-fast);
+}
+
+.card-small-custom:hover {
+  background-color: var(--bg-card-hover);
+  border-color: rgba(0, 210, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+.text-link-small {
+  color: var(--neon-cyan);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  display: inline-block;
+}
+
+.text-link-small:hover {
+  color: var(--text-white);
+  transform: translateX(4px);
+  /* Desplazamiento limpio sin alterar el layout */
+}
+
+/* Optimización de Badges / Etiquetas */
+.badge {
+  padding: 0.45rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.badge.bg-dark {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+.xsmall {
+  font-size: 0.8rem;
+}
+
+/* ==========================================================================
+   5. SECCIÓN DE HABILIDADES
+   ========================================================================== */
+#habilidades .card-custom {
+  padding: 2rem !important;
+}
+
+#habilidades ul li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+#habilidades ul li i {
+  font-size: 1.2rem;
+  width: 24px;
+}
+
+/* ==========================================================================
+   6. AJUSTES RESPONSIVOS COMPLEMENTARIOS (Media Queries)
+   ========================================================================== */
+@media (max-width: 767.98px) {
+
+  /* Centrado adaptativo en móviles */
+  .navbar-nav {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .btn-download-cv,
+  .btn-fluor-green {
+    width: 100%;
+    justify-content: center;
+  }
+
+  section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .display-4 {
+    font-size: 2.2rem;
+  }
 }
