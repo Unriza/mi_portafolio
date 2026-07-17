@@ -1,211 +1,415 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Henry Bolívar | Desarrollador Fullstack</title>
-  
-  <!-- Bootstrap 5.3.2 (Versiones unificadas para evitar errores de renderizado) -->
-  <link href="https://jsdelivr.net" rel="stylesheet" crossorigin="anonymous">
-  <!-- Iconos de Tecnologías (Añade impacto visual a tus habilidades) -->
-  <link rel="stylesheet" href="https://jsdelivr.net">
-  <link rel="stylesheet" href="css/style.css">
-  
-  <meta name="description" content="Portafolio Profesional de Henry Alfonso Bolívar Unriza - Desarrollador Fullstack">
-  <meta property="og:title" content="Henry Bolívar | Portafolio Fullstack">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Henry Alfonso Bolívar Unriza | Desarrollador Fullstack</title>
 
-  <link rel="icon" href="./favicon.ico" sizes="favicon">
-  <link rel="icon" type="image/jpeg" href="./favicon.jpeg">
-  <meta name="theme-color" content="#0a0a0c">
-</head>
+    <!-- Bootstrap 5.3.2 (Versiones unificadas para evitar errores de renderizado) -->
+    <link
+      href="https://jsdelivr.net"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- Iconos de Tecnologías (Añade impacto visual a tus habilidades) -->
+    <link rel="stylesheet" href="https://jsdelivr.net" />
+    <link rel="stylesheet" href="css/style.css" />
 
-<body>
-  <!-- Barra de Navegación -->
-  <nav class="navbar navbar-expand-md sticky-top">
-    <div class="container">
-      <a class="navbar-brand-custom" href="#">Henry Bolívar</a>
-      <button class="navbar-toggler-custom d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        ☰
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav gap-3 mt-3 mt-md-0">
-          <li class="nav-item"><a class="nav-link-custom" href="#sobre-mi">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link-custom" href="#proyectos">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link-custom" href="#habilidades">Habilidades</a></li>
-          <li class="nav-item"><a class="nav-link-custom" href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <meta
+      name="description"
+      content="Portafolio Profesional de Henry Alfonso Bolívar Unriza - Desarrollador Fullstack"
+    />
+    <meta
+      property="og:title"
+      content="Henry Alfonso Bolívar Unriza | Portafolio Fullstack"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <!-- Contenedor Principal -->
-  <main class="container my-5">
-    
-    <!-- Sección Sobre Mí (Contenido centrado y responsivo) -->
-    <section id="sobre-mi" class="row py-5 justify-content-center text-center">
-      <div class="col-12 col-lg-10 col-xl-8">
-        <h1 class="display-4 mb-3 text-glow-blue fw-bold">Henry Alfonso Bolívar Unriza</h1>
-        <h2 class="h3 mb-4 text-muted-custom fw-semibold">Desarrollador Fullstack</h2>
-        <p class="lead text-white-body text-balance mb-4">
-          Desarrollador enfocado en construir aplicaciones web eficientes, escalables y centradas en el usuario. Contribuí al desarrollo de <strong>Generation E-Connect</strong>, una plataforma de aceleración profesional que optimiza la interacción, mentoría y empleabilidad de comunidades técnicas. Me apasiona transformar arquitecturas lógicas en soluciones digitales estables mediante código limpio y buenas prácticas.
-        </p>
-        <!-- Botón de Acción para Descargar CV -->
-        <div class="mt-4">
-          <a href="https://docs.google.com/document/d/1ECILa5Zm-5_W62WJRn5S5wud98CloO1F/edit#heading=h.gjdgxs" download="CV_Henry_Bolivar.pdf" class="btn-download-cv">
-            <i class="devicon-html5-plain me-2"></i> Descargar Currículum (PDF)
-          </a>
+    <link rel="icon" href="./favicon.ico" sizes="favicon" />
+    <link rel="icon" type="image/jpeg" href="./favicon.jpeg" />
+    <meta name="theme-color" content="#0a0a0c" />
+  </head>
+
+  <body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-md sticky-top">
+      <div class="container">
+        <a class="navbar-brand-custom" href="#">Henry Alfonso Bolívar Unriza</a>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-3 mt-3 mt-md-0">
+            <li class="nav-item">
+              <a class="nav-link-custom" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-custom" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-custom" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-custom" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <!-- Sección de Proyectos -->
-    <section id="proyectos" class="py-5">
-      <h2 class="h2 mb-4 text-glow-green">Mis Proyectos</h2>
-      
-      <div class="row g-4">
-        <!-- 1. PROYECTO PRINCIPAL (Ocupa más espacio en pantallas grandes) -->
-        <div class="col-12 col-lg-6">
-          <div class="card-custom p-4 h-100 d-flex flex-column justify-content-between">
-            <div>
-              <span class="badge bg-success text-dark fw-bold mb-2">Proyecto Principal</span>
-              <h3 class="h4 text-white mb-2">Generation E-Connect</h3>
-              <p class="text-muted-custom small">
-                Plataforma web de seguimiento, aceleración e interacción para comunidades de egresados. Permite la gestión de perfiles profesionales, mentorías personalizadas, bolsa de empleo y eventos del sector tecnológico.
+    <!-- Contenedor Principal -->
+    <main class="container my-5">
+      <!-- Sección Sobre Mí (Contenido centrado y responsivo) -->
+      <section
+        id="sobre-mi"
+        class="row py-5 justify-content-center text-center"
+      >
+        <div class="col-12 col-lg-10 col-xl-8">
+          <h1 class="display-4 mb-3 text-glow-blue fw-bold">
+            Henry Alfonso Bolívar Unriza
+          </h1>
+          <img
+            src="./img/henry..png"
+            alt="imagen de Henry Alfonso Bolívar Unriza"
+            class="img-fluid rounded-circle mb-3"
+            style="width: 150px; height: 150px"
+          />
+          <h2 class="h3 mb-4 text-muted-custom fw-semibold">
+            Desarrollador Full Stack
+          </h2>
+          <p class="lead text-white-body text-balance mb-4">
+            Desarrollador enfocado en construir aplicaciones web eficientes,
+            escalables y centradas en el usuario. Contribuí al desarrollo de
+            <strong>Generation E-Connect</strong>, una plataforma de aceleración
+            profesional que optimiza la interacción, mentoría y empleabilidad de
+            comunidades técnicas. Me apasiona transformar arquitecturas lógicas
+            en soluciones digitales estables mediante código limpio y buenas
+            prácticas.
+          </p>
+          <!-- Botón de Acción para Descargar CV -->
+          <div class="mt-4">
+            <a
+              href="https://docs.google.com/document/d/1ECILa5Zm-5_W62WJRn5S5wud98CloO1F/edit#heading=h.gjdgxs"
+              download="CV_Henry_Alfonso_Bolivar_Unriza.pdf"
+              class="btn-download-cv"
+            >
+              <i class="devicon-html5-plain me-2"></i> Descargar Currículum
+              (PDF)
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Proyectos -->
+      <section id="proyectos" class="py-5">
+        <!-- Fila contenedora con separación reforzada -->
+        <div class="row g-3">
+          <!-- Proyecto de Clase 1 -->
+          <div class="col-12 col-sm-6">
+            <div
+              class="card-small-custom p-3 h-100 d-flex flex-column justify-content-between"
+            >
+              <!-- Contenido de tu tarjeta -->
+            </div>
+          </div>
+          ...
+        </div>
+
+        <h2 class="h2 mb-4 text-glow-green">Mis Proyectos</h2>
+
+        <div class="row g-4">
+          <!-- 1. PROYECTO PRINCIPAL (Ocupa más espacio en pantallas grandes) -->
+          <div class="col-12 col-lg-6">
+            <div
+              class="card-custom p-4 h-100 d-flex flex-column justify-content-between"
+            >
+              <div>
+                <span class="badge bg-success text-dark fw-bold mb-2"
+                  >Proyecto Principal</span
+                >
+                <h3 class="h4 text-white mb-2">Generation E-Connect</h3>
+                <p class="text-muted-custom small">
+                  Plataforma web de seguimiento, aceleración e interacción para
+                  comunidades de egresados. Permite la gestión de perfiles
+                  profesionales, mentorías personalizadas, bolsa de empleo y
+                  eventos del sector tecnológico.
+                </p>
+                <div class="mb-3">
+                  <small class="text-white-body d-block mb-1"
+                    ><strong>Tecnologías:</strong></small
+                  >
+                  <span class="badge bg-dark text-success border border-success"
+                    >JavaScript</span
+                  >
+                  <span class="badge bg-dark text-success border border-success"
+                    >HTML5</span
+                  >
+                  <span class="badge bg-dark text-success border border-success"
+                    >Bootstrap</span
+                  >
+                </div>
+              </div>
+              <div class="mt-3">
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-fluor-green d-block w-100 text-center"
+                >
+                  Ver Repositorio Principal
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. COLUMNA DE PROYECTOS DE CLASE / PEQUEÑOS -->
+          <div class="col-12 col-lg-6">
+            <div class="row g-3">
+              <!-- Proyecto de Clase 1 -->
+              <div class="col-12 col-sm-6">
+                <div
+                  class="card-small-custom p-3 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <h4 class="h6 text-white mb-1">Proyecto Tienda y Moda</h4>
+                    <p class="text-muted-custom xsmall mb-2">
+                      Desarrollo de una aplicación web para la gestión de
+                      productos y ventas en el sector de la moda.
+                    </p>
+                    <div class="gap-1 d-flex flex-wrap mb-2">
+                      <span
+                        class="badge bg-dark text-info border border-info xsmall"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="badge bg-dark text-info border border-info xsmall"
+                        >CSS3</span
+                      >
+                      <span
+                        class="badge bg-dark text-info border border-info xsmall"
+                        >HTML5</span
+                      >
+                    </div>
+                  </div>
+                  <a
+                    href="https://github.com/girleykinnux-pixel/-trendyShop.git"
+                    target="_blank"
+                    class="text-link-small mt-2"
+                    >Código en GitHub →</a
+                  >
+                </div>
+              </div>
+
+              <!-- Proyecto de Clase 2 -->
+              <div class="col-12 col-sm-6">
+                <div
+                  class="card-small-custom p-3 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <h4 class="h6 text-white mb-1">Poque-api</h4>
+                    <p class="text-muted-custom xsmall mb-2">
+                      Página de documentación para la API de Pokémon.
+                    </p>
+                    <div class="gap-1 d-flex flex-wrap mb-2">
+                      <span
+                        class="badge bg-dark text-info border border-info xsmall"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="badge bg-dark text-info border border-info xsmall"
+                        >JSON</span
+                      >
+                    </div>
+                  </div>
+                  <a
+                    href="https://github.com/OscarYustres/pokeapi-almacenamiento-web.git"
+                    target="_blank"
+                    class="text-link-small mt-2"
+                    >Código en GitHub →</a
+                  >
+                </div>
+              </div>
+
+              <!-- Proyecto de Clase 3 -->
+              <div class="col-12 col-sm-6">
+                <div
+                  class="card-small-custom p-3 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <h4 class="h6 text-white mb-1">Conversor de temperatura</h4>
+                    <p class="text-muted-custom xsmall mb-2">
+                      Aplicación web para convertir temperaturas entre Celsius,
+                      Fahrenheit y Kelvin.
+                    </p>
+                    <div class="gap-1 d-flex flex-wrap mb-2">
+                      <span
+                        class="badge bg-dark text-info border border-info xsmall"
+                        >HTML5</span
+                      >
+                      <span
+                        class="badge bg-dark text-info border border-info xsmall"
+                        >CSS3</span
+                      >
+                      <span
+                        class="badge bg-dark text-info border border-info xsmall"
+                        >JavaScript</span
+                      >
+                    </div>
+                  </div>
+                  <a
+                    href="https://github.com/Unriza/taller_temperatura.git"
+                    target="_blank"
+                    class="text-link-small mt-2"
+                    >Código en GitHub →</a
+                  >
+                </div>
+              </div>
+
+              <!-- Proyecto de Clase 4 -->
+              <div class="col-12 col-sm-6">
+                <div
+                  class="card-small-custom p-3 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <h4 class="h6 text-white mb-1">Eventos DOM</h4>
+                    <p class="text-muted-custom xsmall mb-2">
+                      Implementación de eventos interactivos en el DOM para
+                      mejorar la experiencia del usuario.
+                    </p>
+                    <div class="gap-1 d-flex flex-wrap mb-2">
+                      <span
+                        class="badge bg-dark text-info border border-info xsmall"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="badge bg-dark text-info border border-info xsmall"
+                        >DOM</span
+                      >
+                    </div>
+                  </div>
+                  <a
+                    href="https://github.com/Unriza/lab_DOM_eventos.git"
+                    target="_blank"
+                    class="text-link-small mt-2"
+                    >Código en GitHub →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Habilidades Visuales -->
+      <section id="habilidades" class="py-5">
+        <h2 class="h2 mb-4 text-glow-blue" style="font-size: 30px">
+          Stack Tecnológico
+        </h2>
+        <div class="d-flex flex-wrap gap-4 align-items-center">
+          <div class="text-center text-white-body me-2">
+            <i class="devicon-html5-plain colored display-5 d-block mb-1"></i
+            ><small style="font-size: 20px">HTML5 </small>
+          </div>
+          <div class="text-center text-white-body me-2">
+            <i class="devicon-css3-plain colored display-5 d-block mb-1"></i
+            ><small style="font-size: 20px">CSS3 </small>
+          </div>
+          <div class="text-center text-white-body me-2">
+            <i class="devicon-sass-original colored display-5 d-block mb-1"></i
+            ><small style="font-size: 20px">Sass </small>
+          </div>
+          <div class="text-center text-white-body me-2">
+            <i class="devicon-java-plain colored display-5 d-block mb-1"></i
+            ><small style="font-size: 20px">Java </small>
+          </div>
+          <div class="text-center text-white-body me-2">
+            <i
+              class="devicon-javascript-plain colored display-5 d-block mb-1"
+            ></i
+            ><small style="font-size: 20px">JavaScript</small>
+          </div>
+          <div class="text-center text-white-body me-2">
+            <i class="devicon-python-plain colored display-5 d-block mb-1"></i
+            ><small style="font-size: 20px">Python </small>
+          </div>
+          <div class="text-center text-white-body me-2">
+            <i
+              class="devicon-bootstrap-plain colored display-5 d-block mb-1"
+            ></i
+            ><small style="font-size: 20px">Bootstrap </small>
+          </div>
+          <div class="text-center text-white-body me-2">
+            <i class="devicon-mysql-plain colored display-5 d-block mb-1"></i
+            ><small style="font-size: 20px">My SQL </small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Certificaciones y Redes -->
+      <section id="certificaciones" class="py-5">
+        <h2 class="h2 mb-4 text-glow-green">Certificaciones & Trayectoria</h2>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6">
+            <a
+              href="https://www.linkedin.com/in/henry-alfonso-bol%C3%ADvar-unriza-dearrollador-fullstack/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-link-custom"
+            >
+              <h4>LinkedIn Profesional</h4>
+              <p class="text-muted-custom mb-0">
+                Conecta conmigo, conoce mis actividades y trayectoria técnica.
               </p>
-              <div class="mb-3">
-                <small class="text-white-body d-block mb-1"><strong>Tecnologías:</strong></small>
-                <span class="badge bg-dark text-success border border-success">JavaScript</span>
-                <span class="badge bg-dark text-success border border-success">HTML5</span>
-                <span class="badge bg-dark text-success border border-success">Bootstrap</span>
-              </div>
-            </div>
-            <div class="mt-3">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-fluor-green d-block w-100 text-center">
-                Ver Repositorio Principal
-              </a>
-            </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6">
+            <a
+              href="https://docs.google.com/document/d/1ECILa5Zm-5_W62WJRn5S5wud98CloO1F/edit#heading=h.gjdgxs"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-link-custom"
+            >
+              <h4>Certificados Académicos</h4>
+              <p class="text-muted-custom mb-0">
+                Validación de cursos completados, en CONQUER BLOKS (España),
+                GENERATION Colombia.
+              </p>
+            </a>
           </div>
         </div>
+      </section>
+    </main>
 
-        <!-- 2. COLUMNA DE PROYECTOS DE CLASE / PEQUEÑOS -->
-        <div class="col-12 col-lg-6">
-          <div class="row g-3">
-            
-            <!-- Proyecto de Clase 1 -->
-            <div class="col-12 col-sm-6">
-              <div class="card-small-custom p-3 h-100 d-flex flex-column justify-content-between">
-                <div>
-                  <h4 class="h6 text-white mb-1">Proyecto Tienda y Moda</h4>
-                  <p class="text-muted-custom xsmall mb-2">Desarrollo de una aplicación web para la gestión de productos y ventas en el sector de la moda.</p>
-                  <div class="gap-1 d-flex flex-wrap mb-2">
-                    <span class="badge bg-dark text-info border border-info xsmall">JavaScript</span>
-                    <span class="badge bg-dark text-info border border-info xsmall">CSS3</span>
-                    <span class="badge bg-dark text-info border border-info xsmall">HTML5</span
-                  </div>
-                </div>
-                <a href="https://github.com/girleykinnux-pixel/-trendyShop.git" target="_blank" class="text-link-small mt-2">Código en GitHub →</a>
-              </div>
-            </div>
-
-            <!-- Proyecto de Clase 2 -->
-            <div class="col-12 col-sm-6">
-              <div class="card-small-custom p-3 h-100 d-flex flex-column justify-content-between">
-                <div>
-                  <h4 class="h6 text-white mb-1">Poque-api</h4>
-                  <p class="text-muted-custom xsmall mb-2">Página de documentación para la API de Pokémon.</p>
-                  <div class="gap-1 d-flex flex-wrap mb-2">
-                    <span class="badge bg-dark text-info border border-info xsmall">JavaScript</span>
-                    <span class="badge bg-dark text-info border border-info xsmall">JSON</span>
-                  </div>
-                </div>
-                <a href="https://github.com/OscarYustres/pokeapi-almacenamiento-web.git" target="_blank" class="text-link-small mt-2">Código en GitHub →</a>
-              </div>
-            </div>
-
-            <!-- Proyecto de Clase 3 -->
-            <div class="col-12 col-sm-6">
-              <div class="card-small-custom p-3 h-100 d-flex flex-column justify-content-between">
-                <div>
-                  <h4 class="h6 text-white mb-1">Conversor de temperatura</h4>
-                  <p class="text-muted-custom xsmall mb-2">Aplicación web para convertir temperaturas entre Celsius, Fahrenheit y Kelvin.</p>
-                  <div class="gap-1 d-flex flex-wrap mb-2">
-                    <span class="badge bg-dark text-info border border-info xsmall">HTML5</span>
-                    <span class="badge bg-dark text-info border border-info xsmall">CSS3</span>
-                    <span class="badge bg-dark text-info border border-info xsmall">JavaScript</span>
-                  </div>
-                </div>
-                <a href="https://github.com/Unriza/taller_temperatura.git" target="_blank" class="text-link-small mt-2">Código en GitHub →</a>
-              </div>
-            </div>
-
-            <!-- Proyecto de Clase 4 -->
-            <div class="col-12 col-sm-6">
-              <div class="card-small-custom p-3 h-100 d-flex flex-column justify-content-between">
-                <div>
-                  <h4 class="h6 text-white mb-1">Eventos DOM</h4>
-                  <p class="text-muted-custom xsmall mb-2">Implementación de eventos interactivos en el DOM para mejorar la experiencia del usuario.</p>
-                  <div class="gap-1 d-flex flex-wrap mb-2">
-                    <span class="badge bg-dark text-info border border-info xsmall">JavaScript</span>
-                    <span class="badge bg-dark text-info border border-info xsmall">DOM</span>
-                  </div>
-                </div>
-                <a href="https://github.com/Unriza/lab_DOM_eventos.git" target="_blank" class="text-link-small mt-2">Código en GitHub →</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
+    <!-- Pie de Página -->
+    <footer id="contacto" class="footer-custom py-5 mt-5">
+      <div class="container text-center">
+        <p class="mb-2">
+          ¿Tienes un proyecto en mente? Contáctame directo:
+          <a href="mailto:henryboli91@gmail.com" class="text-fluor-blue"
+            >henryboli91@gmail.com</a
+          >
+        </p>
+        <a
+          href="https://www.linkedin.com/in/henry-alfonso-bol%C3%ADvar-unriza-dearrollador-fullstack/"
+          ><img
+            src="./img/linkedin.png"
+            alt="LinkedIn"
+            class="img-fluid rounded-circle"
+            style="width: 50px; height: 50px"
+        /></a>
+        <p class="small text-muted-custom mb-0">
+          © 2026 Henry Bolívar. Desarrollado de forma limpia y responsiva.
+        </p>
       </div>
-    </section>
+    </footer>
 
-
-    <!-- Sección de Habilidades Visuales -->
-    <section id="habilidades" class="py-5">
-      <h2 class="h2 mb-4 text-glow-blue">Stack Tecnológico</h2>
-      <div class="d-flex flex-wrap gap-4 align-items-center">
-        <div class="text-center text-white-body me-2"><i class="devicon-html5-plain colored display-5 d-block mb-1"></i><small>HTML5</small></div>
-        <div class="text-center text-white-body me-2"><i class="devicon-css3-plain colored display-5 d-block mb-1"></i><small>CSS3</small></div>
-        <div class="text-center text-white-body me-2"><i class="devicon-sass-original colored display-5 d-block mb-1"></i><small>Sass</small></div>
-        <div class="text-center text-white-body me-2"><i class="devicon-javascript-plain colored display-5 d-block mb-1"></i><small>JavaScript</small></div>
-        <div class="text-center text-white-body me-2"><i class="devicon-python-plain colored display-5 d-block mb-1"></i><small>Python</small></div>
-        <div class="text-center text-white-body me-2"><i class="devicon-bootstrap-plain colored display-5 d-block mb-1"></i><small>Bootstrap</small></div>
-      </div>
-    </section>
-
-    <!-- Sección de Certificaciones y Redes -->
-    <section id="certificaciones" class="py-5">
-      <h2 class="h2 mb-4 text-glow-green">Certificaciones & Trayectoria</h2>
-      <div class="row g-4">
-        <div class="col-12 col-sm-6">
-          <a href="https://www.linkedin.com/in/henry-alfonso-bol%C3%ADvar-unriza-dearrollador-fullstack/" target="_blank" rel="noopener noreferrer" class="card-link-custom">
-            <h4>LinkedIn Profesional</h4>
-            <p class="text-muted-custom mb-0">Conecta conmigo, conoce mis actividades y trayectoria técnica.</p>
-          </a>
-        </div>
-        <div class="col-12 col-sm-6">
-          <a href="https://docs.google.com/document/d/1ECILa5Zm-5_W62WJRn5S5wud98CloO1F/edit#heading=h.gjdgxs" target="_blank" rel="noopener noreferrer" class="card-link-custom">
-            <h4>Certificados Académicos</h4>
-            <p class="text-muted-custom mb-0">Validación de cursos completados, en CONQUER BLOKS (España), GENERATION Colombia.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Pie de Página -->
-  <footer id="contacto" class="footer-custom py-5 mt-5">
-    <div class="container text-center">
-      <p class="mb-2">¿Tienes un proyecto en mente? Contáctame directo: <a href="mailto:henryboli91@gmail.com" class="text-fluor-blue">henryboli91@gmail.com</a></p>
-      <a href="https://www.linkedin.com/in/henry-alfonso-bol%C3%ADvar-unriza-dearrollador-fullstack/"><img scr="img/linkedin" href="./img/linkedin.png"></a>
-      <p class="small text-muted-custom mb-0">© 2026 Henry Bolívar. Desarrollado de forma limpia y responsiva.</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap 5.3.2 Bundle JS (Correcto y emparejado con el CSS) -->
-  <script src="https://jsdelivr.net" crossorigin="anonymous"></script>
-</body>
+    <!-- Bootstrap 5.3.2 Bundle JS (Correcto y emparejado con el CSS) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kQ0uCjXlSY9GgFTE30jzW2e1s2DjaHgi3H5V9fQ8m7x90724c11d"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
